@@ -1,1 +1,255 @@
-1
+@font-face {
+    font-family: "TiroGurmukhi-Regular";
+     src: url("assets/fonts/TiroGurmukhi-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  display: block; 
+  justify-content: space-between;
+  font-family: "TiroGurmukhi-Regular";
+  min-width: 500px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+.header {
+  padding: 10px;  
+  justify-content: space-between;
+  background-color: #d4a7da;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #4d2323; 
+  transition: .3s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: -5px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background-color: #4d2323;
+  opacity: 0;
+  transition: .5s;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.main {
+  margin-bottom: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section {
+  width: 50%;
+  padding: 10px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #672f2f;
+}
+
+.section-education,
+.section-english {
+  border-bottom: 0px;
+}
+
+.section-title {
+  margin-bottom: 20px;  
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #4d2323;
+}
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 30px 35px;
+  border-bottom: 15px solid #e6cde4;
+}
+
+.pre {
+  padding: 0;
+  margin: 0;
+}
+
+.section-profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;  
+  text-transform: uppercase;
+}
+
+.main-title {
+  position: relative;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #4d2323;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  line-height: 50px;
+  word-spacing: 3px;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  height: 2px;
+  background-color: #4d2323;
+}
+
+.section-subtitle {
+  margin-top: 20px;
+  color: #5c5c5c;
+  line-height: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.section-subtitle2 {
+  margin-top: 20px;
+  color: #5c5c5c;
+  line-height: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.section-profile-logo {
+  width: 450px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  }
+
+.section-profile-logo:hover {
+  filter: none;
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;  
+  list-style: none;
+}
+
+.section-item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.section-item span {
+  color: #4d2323;
+}
+
+.section-item a {
+  text-decoration: none;
+  color: #4d2323;
+  transition: color 0.5s;
+}
+
+.section-item a:hover {
+  color: #4d2323;
+}
+
+.contacts-item:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 24px;
+  height: 24px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #d4a7da;
+  padding: 20px;  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #4d2323;
+}
+
+.github {
+  color: #4d2323;
+  line-height: 45px;
+  background-image: url("./assets/svg/25231.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+}
+
+.rss {
+  width: 121px;
+  height: 45px;
+  background-image: url("./assets/svg/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+@media (max-width: 410px) {
+  .main-title {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }  
+}
