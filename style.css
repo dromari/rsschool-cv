@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("assets/fonts/RobotoSlab-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/**,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}*/
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c6e70d8e;
+    box-shadow: 0px 4px 12px rgba(13, 96, 111, 0.5);
+    height: 70px;
+}
+
+.header-wrapper {
+    width: 100%;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 6em;
+}
+
+.nav-list a {
+    font-family: "RobotoSlab";
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: rgb(8, 92, 92);
+    height: 21px;
+    position: relative;
+}
+
+.nav-list a:hover {
+    color: rgba(23, 204, 204, 0.911);
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.AboutMe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+}
+
+.name {
+    text-align: center;
+    font-family: "RobotoSlab";
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(8, 92, 92);
+}
+
+h1 {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    background-color: rgb(8, 92, 92);
+    height: 3px;
+    width: 167px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.photo {
+    margin-top: 10px;
+}
+
+.photo img {
+    width: 12em;
+    height: 12em;
+}
+
+.text {
+    text-align: center;
+    font-family: "RobotoSlab";
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(8, 92, 92);
+}
+
+.line {
+    height: 35px;
+    background: #c6e70d8e;
+    box-shadow: 0.5px 1px 16px 4px rgb(13 96 111 / 50%);
+
+}
+
+.layout-2-column {
+    display: flex;
+    justify-content: space-around;
+}
+
+#MyProSkills,
+#PersonalSkills,
+#Education,
+#Courses,
+#Code,
+#MyProject,
+#Language,
+#Contacts {
+    font-family: "RobotoSlab";
+    font-size: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: rgb(8, 92, 92);
+    list-style: none;
+    margin-top: 50px;
+}
+
+.content-column {
+    font-family: "RobotoSlab";
+    font-size: 20px;
+    line-height: 35px;
+    text-decoration: none;
+    color: rgb(3, 46, 46);
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    height: 70px;
+    background-color: #c6e70d8e;
+    box-shadow: 0px 3px 12px 5px rgb(13 96 111 / 50%);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    height: 100%;
+}
+
+.footer-content ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-content h2 {
+    font-family: "RobotoSlab";
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration: none;
+    color: black;
+    height: 21px;
+}
+
+.github img {
+    width: 30px;
+}
+
+.rsschool img {
+    width: 80px;
+}
