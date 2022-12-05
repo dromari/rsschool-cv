@@ -6,7 +6,6 @@
 - [Education](#education)
 - [English](#english)
 
-![My photo](Aspose.Words.7767a6f9-79e6-452b-a2e5-20e77ed0cc3a.001.png) 
 # **Maryna Drob**
 ## **Junior Front-End Developer**
 ### **About me: I love my job. I like to find a solution for any problem. I easily find a common language with different people. I always complete my work on time. I love to learn and improve my knowledge.**
