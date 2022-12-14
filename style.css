@@ -48,6 +48,10 @@ body {
     margin: 0 6em;
 }
 
+.nav-list-900 {
+    display: none;
+}
+
 .nav-list a {
     font-family: "RobotoSlab";
     font-size: 16px;
@@ -66,14 +70,15 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-
+    margin: 0 6em;
 }
 
 .AboutMe {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 250px;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .name {
@@ -92,7 +97,7 @@ hr {
     border: none;
     background-color: rgb(8, 92, 92);
     height: 3px;
-    width: 167px;
+    width: 80%;
 }
 
 h2 {
@@ -118,15 +123,17 @@ h2 {
 }
 
 .line {
-    height: 35px;
+    height: 15px;
     background: #c6e70d8e;
     box-shadow: 0.5px 1px 16px 4px rgb(13 96 111 / 50%);
+    margin-top: 20px;
 
 }
 
 .layout-2-column {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 
 #MyProSkills,
@@ -143,7 +150,17 @@ h2 {
     text-decoration: none;
     color: rgb(8, 92, 92);
     list-style: none;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(8, 92, 92);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(15, 206, 206);
 }
 
 .content-column {
@@ -155,15 +172,6 @@ h2 {
     list-style: none;
     text-decoration: none;
 }
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 
 .footer {
     height: 70px;
@@ -200,4 +208,92 @@ a:hover {
 
 .rsschool img {
     width: 80px;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list-900 {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0 2em;
+    }
+
+    .nav-list-900 a {
+        font-family: "RobotoSlab";
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration: none;
+        color: rgb(8, 92, 92);
+        height: 21px;
+        position: relative;
+    }
+
+    .photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .main {
+        margin: 0 2em;
+    }
+
+}
+
+@media screen and (max-width: 505px) {
+    body {
+        max-width: 505px;
+        margin: auto;
+    }
+
+    .nav-list-900 a {
+        font-size: 14px;
+    }
+
+    .AboutMe {
+        flex-direction: column;
+    }
+
+    .layout-2-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        max-width: 450px;
+        margin: auto;
+    }
+
+    .header {
+        height: 200px;
+    }
+
+    .nav-list-900 {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
