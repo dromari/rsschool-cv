@@ -8,17 +8,12 @@ html {
     box-sizing: border-box;
 }
 
-/**,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}*/
-
 body {
-    max-width: 1440px;
     margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
@@ -41,7 +36,6 @@ body {
 
 ul ul {
     list-style-type: none;
-
 }
 
 .nav-list {
@@ -74,16 +68,16 @@ ul ul {
 
 .main {
     display: flex;
-    flex-direction: column;
-    margin: 0 6em;
+    justify-content: center;
+    gap: 3em;
 }
 
 .AboutMe {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 2.5em;
+
 }
 
 .name {
@@ -110,13 +104,8 @@ h2 {
     font-size: 40px;
 }
 
-.photo {
-    margin-top: 10px;
-}
-
 .photo img {
-    width: 12em;
-    height: 12em;
+    width: 17em;
 }
 
 .text {
@@ -128,17 +117,22 @@ h2 {
 }
 
 .line {
-    height: 15px;
+    height: 42em;
+    width: 3px;
     background: #c6e70d8e;
     box-shadow: 0.5px 1px 16px 4px rgb(13 96 111 / 50%);
-    margin-top: 20px;
-
 }
 
 .layout-2-column {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    gap: 3em;
+}
+
+.one-column,
+.two-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #MyProSkills,
@@ -151,16 +145,13 @@ h2 {
 #Contacts {
     font-family: "RobotoSlab";
     font-size: 30px;
-    line-height: 30px;
-    text-decoration: none;
     color: rgb(8, 92, 92);
-    list-style: none;
-    margin-top: 30px;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: rgb(8, 92, 92);
+    color: rgb(20 187 187);
 }
 
 a:hover {
@@ -190,7 +181,6 @@ a:hover {
     justify-content: space-around;
     text-decoration: none;
     list-style: none;
-    height: 100%;
 }
 
 .footer-content ul {
@@ -212,7 +202,7 @@ a:hover {
 }
 
 .github img:hover {
-    transform:scale(1.5);
+    transform: scale(1.5);
     transition: 0.7s;
 }
 
@@ -221,13 +211,13 @@ a:hover {
 }
 
 .rsschool img:hover {
-    transform:scale(1.25);
+    transform: scale(1.25);
     transition: 0.7s;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1120px) {
     body {
-        max-width: 900px;
+        max-width: 1120px;
         margin: auto;
     }
 
@@ -244,6 +234,15 @@ a:hover {
         margin: 0 2em;
     }
 
+    .one-column-nav,
+    .two-column-nav,
+    .three-column-nav,
+    .four-column-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
     .nav-list-900 a {
         font-family: "RobotoSlab";
         font-size: 16px;
@@ -255,8 +254,7 @@ a:hover {
     }
 
     .photo img {
-        width: 150px;
-        height: 150px;
+        width: 14em;
     }
 
     h2 {
@@ -264,14 +262,54 @@ a:hover {
     }
 
     .main {
-        margin: 0 2em;
+        margin: 1em 2em;
     }
 
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 890px) {
     body {
-        max-width: 570px;
+        max-width: 890px;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .AboutMe {
+        flex-direction: initial;
+    }
+
+    .photo {
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .line {
+        width: auto;
+        height: 3px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    body {
+        max-width: 725px;
+    }
+
+    .AboutMe {
+        flex-wrap: wrap;
+    }
+
+    .text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    body {
+        max-width: 590px;
         margin: auto;
     }
 
@@ -305,14 +343,17 @@ a:hover {
     }
 
     .nav-list-900 {
-        display: none;
+        flex-wrap: wrap;
+        gap: 1em;
     }
 
-    .nav-list {
+    .one-column-nav,
+    .two-column-nav,
+    .three-column-nav,
+    .four-column-nav {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 2em;
     }
-
 
 }
