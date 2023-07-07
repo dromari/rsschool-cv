@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("assets/fonts/RobotoSlab-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c6e70d8e;
+    box-shadow: 0px 4px 12px rgba(13, 96, 111, 0.5);
+    height: 70px;
+}
+
+.header-wrapper {
+    width: 100%;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+ul ul {
+    list-style-type: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 6em;
+}
+
+.nav-list-900 {
+    display: none;
+}
+
+.nav-list a {
+    font-family: "RobotoSlab";
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: rgb(8, 92, 92);
+    height: 21px;
+    position: relative;
+}
+
+.nav-list a:hover {
+    color: rgba(23, 204, 204, 0.911);
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+
+}
+
+.name {
+    text-align: center;
+    font-family: "RobotoSlab";
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(8, 92, 92);
+}
+
+h1 {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    background-color: rgb(8, 92, 92);
+    height: 3px;
+    width: 80%;
+}
+
+h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.photo img {
+    width: 17em;
+    box-shadow: 0px 0px 10px 5px rgba(13, 96, 111, 0.5);
+    border-radius: 50%;
+}
+
+.text {
+    text-align: center;
+    font-family: "RobotoSlab";
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(8, 92, 92);
+}
+
+.line {
+    height: 42em;
+    width: 3px;
+    background: #c6e70d8e;
+    box-shadow: 0px 0px 12px 2px rgb(13 96 111 / 50%);
+}
+
+.layout-2-column {
+    display: flex;
+    gap: 3em;
+}
+
+.one-column,
+.two-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#MyProSkills,
+#PersonalSkills,
+#Education,
+#Courses,
+#Code,
+#MyProject,
+#Language,
+#Contacts {
+    font-family: "RobotoSlab";
+    font-size: 30px;
+    color: rgb(8, 92, 92);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(20 187 187);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(15, 206, 206);
+}
+
+.content-column {
+    font-family: "RobotoSlab";
+    font-size: 20px;
+    line-height: 35px;
+    text-decoration: none;
+    color: rgb(3, 46, 46);
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer {
+    height: 70px;
+    background-color: #c6e70d8e;
+    box-shadow: 0px 3px 12px 5px rgb(13 96 111 / 50%);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-content ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-content h2 {
+    font-family: "RobotoSlab";
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration: none;
+    color: black;
+    height: 21px;
+}
+
+.github img {
+    width: 30px;
+}
+
+.github img:hover {
+    transform: scale(1.5);
+    transition: 0.7s;
+}
+
+.rsschool img {
+    width: 80px;
+}
+
+.rsschool img:hover {
+    transform: scale(1.25);
+    transition: 0.7s;
+}
+
+@media screen and (max-width: 1120px) {
+    body {
+        max-width: 1120px;
+        margin: auto;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list-900 {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0 2em;
+    }
+
+    .one-column-nav,
+    .two-column-nav,
+    .three-column-nav,
+    .four-column-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .nav-list-900 a {
+        font-family: "RobotoSlab";
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration: none;
+        color: rgb(8, 92, 92);
+        height: 21px;
+        position: relative;
+    }
+
+    .photo img {
+        width: 14em;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .main {
+        margin: 1em 2em;
+    }
+
+}
+
+@media screen and (max-width: 890px) {
+    body {
+        max-width: 890px;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .AboutMe {
+        flex-direction: initial;
+    }
+
+    .photo {
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .line {
+        width: auto;
+        height: 3px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    body {
+        max-width: 725px;
+    }
+
+    .AboutMe {
+        flex-wrap: wrap;
+    }
+
+    .text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    body {
+        max-width: 590px;
+        margin: auto;
+    }
+
+    .header {
+        height: 100px;
+    }
+
+    .nav-list-900 a {
+        font-size: 16px;
+    }
+
+    .AboutMe {
+        flex-direction: column;
+    }
+
+    .layout-2-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        max-width: 450px;
+        margin: auto;
+    }
+
+    .header {
+        height: 200px;
+    }
+
+    .nav-list-900 {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .one-column-nav,
+    .two-column-nav,
+    .three-column-nav,
+    .four-column-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+}
