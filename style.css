@@ -106,6 +106,8 @@ h2 {
 
 .photo img {
     width: 17em;
+    box-shadow: 0px 0px 10px 5px rgba(13, 96, 111, 0.5);
+    border-radius: 50%;
 }
 
 .text {
@@ -120,7 +122,7 @@ h2 {
     height: 42em;
     width: 3px;
     background: #c6e70d8e;
-    box-shadow: 0.5px 1px 16px 4px rgb(13 96 111 / 50%);
+    box-shadow: 0px 0px 12px 2px rgb(13 96 111 / 50%);
 }
 
 .layout-2-column {
