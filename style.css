@@ -83,23 +83,30 @@ ul ul {
 
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 3em;
+  margin: 3em 0;
 }
 
 .AboutMe {
+  width: 95%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 2.5em;
 }
 
 .name {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "RobotoSlab";
   font-size: 25px;
   text-decoration: none;
   color: rgb(8, 92, 92);
+  text-align: center;
 }
 
 h1 {
@@ -115,7 +122,14 @@ hr {
 
 h2 {
   margin: 0;
+  text-align: center;
   font-size: 40px;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  width: 34%;
 }
 
 .photo img {
@@ -133,22 +147,17 @@ h2 {
 }
 
 .line {
-  height: 42em;
-  width: 3px;
+  height: 3px;
+  width: 90%;
   background: var(--green-line);
   box-shadow: 0px 0px 12px 2px rgb(13 96 111 / 50%);
 }
 
-.layout-2-column {
-  display: flex;
-  gap: 3em;
-}
-
-.one-column,
-.two-column {
+.skills {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 3em;
 }
 
 #MyProSkills,
@@ -163,6 +172,13 @@ h2 {
   font-size: 30px;
   color: rgb(8, 92, 92);
   margin: 0;
+}
+
+.transfer {
+  font-size: 20px;
+  color: rgb(3, 41, 41);
+  margin-top: 0.5em;
+  margin-left: 1em;
 }
 
 a {
@@ -183,6 +199,14 @@ a:hover {
   color: rgb(3, 46, 46);
   list-style: none;
   text-decoration: none;
+}
+
+.content-column>li {
+  list-style: none;
+  font-family: "RobotoSlab";
+  font-size: 30px;
+  color: rgb(8, 92, 92);
+  margin: 0;
 }
 
 .footer {
