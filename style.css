@@ -142,12 +142,13 @@ p {
   color: #085c5c;
   text-align: center;
 }
-/* 
+
 .name::after {
+  content: "";
   width: 200px;
   height: 2px;
-  color: #c6e70d;
-} */
+  background-color: #c6e70d;
+}
 
 .discription {
   position: absolute;
@@ -224,7 +225,7 @@ p {
   background-color: #c6e70d;
   border-radius: 10px;
   flex-wrap: wrap;
-  padding: 25px 30px;
+  padding: 30px;
 }
 
 .title-section {
@@ -238,6 +239,11 @@ p {
   color: #000;
 }
 
+.title-pro-skills,
+.title-personal-skills {
+  margin: 0;
+}
+
 /*---------education---------*/
 
 table,
@@ -248,7 +254,8 @@ td {
 
 th,
 td {
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .education-wrapper {
@@ -285,6 +292,11 @@ td {
 
 /*---------projects-------*/
 
+.projects {
+  position: relative;
+  height: 800px;
+}
+
 .projects-wrapper {
   display: flex;
   gap: 5%;
@@ -294,8 +306,125 @@ td {
   color: #000;
 }
 
-.projects-wrapper > li > a:hover {
-  color: #c6e70d;
+
+.slider {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  position: relative;
+  animation: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+.active,
+.next {
+  display: block;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.description-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.description-slide img {
+  width: 100%;
+}
+
+.description-slide a:hover {
+  background: none;
+  border-radius: 0px;
+}
+
+.project-name {
+  padding: 10px;
+}
+
+.project-image:hover {
+  box-shadow: 0px 0px 10px 5px #c6e70d;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 62px;
+  height: 62px;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.left {
+  background: no-repeat url("./assets/images/icons8-шеврон-влево-64.png");
+}
+
+.right {
+  background: no-repeat url("./assets/images/icons8-шеврон-вправо-64.png");
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 /*---------language------*/
@@ -354,11 +483,13 @@ td {
 .social-circle:hover {
   border: 4px solid #085c5c;
   background: #085c5c;
+  
 }
 
 .social-circle:hover > a > .social-img > path {
   transition: 0.5s;
   fill: #c6e70d;
+  transition: 0.5s;
 }
 
 .footer-social-wrapper > ul {
@@ -386,6 +517,7 @@ td {
 .social-circle > a:hover {
   background: none;
   border-radius: 0px;
+  transition: 0.5s;
 }
 
 .link-github {
@@ -399,8 +531,17 @@ td {
 .link-github:hover {
   background: none;
   color: #085c5c;
+  transition: 0.5s;
 }
 
 .link-github:hover > svg {
+  transition: 0.5s;
   fill: #085c5c;
+}
+
+.link-rsschool:hover{
+  background: none;
+  color: #085c5c;
+  transform: scale(1.1);
+  transition: 0.5s;
 }

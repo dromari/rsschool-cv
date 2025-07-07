@@ -42,8 +42,7 @@
         <h2 class="discription">About me: <br>
           I like what I do
         </h2>
-        <a class="discription discription-github" href="https://github.com/dromari">
-          github
+        <a class="discription discription-github" href="https://github.com/dromari" target="_blank">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="48" height="48" fill="white" fill-opacity="0.01" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -54,9 +53,7 @@
               fill="#085c5c" />
           </svg>
         </a>
-        <a class="discription discription-linkedin" href="https://www.linkedin.com/in/dromari/">
-          linkedin
-          <svg
+        <a class="discription discription-linkedin" href="https://www.linkedin.com/in/dromari/" target="_blank"><svg
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
             width="75px" height="75px" fill-rule="nonzero">
             <g fill="#085c5c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -68,26 +65,30 @@
                 </path>
               </g>
             </g>
-          </svg>
-        </a>
+          </svg></a>
         <div class="photo">
           <img class="photo-img" src="./assets/images/my-photo.jpg" alt="My Photo">
         </div>
       </div>
 
       <div class="skills section">
-        <p class="title-section" id="pro-skills">My pro skills</p>
-        <ul class="pro-skills-wrapper title-section">
-          <li>&#10004; Web-development: HTML, CSS, JavaScript</li>
-          <li>&#10004; Version control: GIT, Github</li>
-          <li>&#10004; Figma</li>
-        </ul>
-        <p class="title-section" id="personal-skills">Personal skills</p>
-        <ul class="personal-skills-wrapper title-section">
-          <li>&#10004; Self-organized</li>
-          <li>&#10004; Sociable</li>
-          <li>&#10004; Executive</li>
-        </ul>
+        <div class="pro-skills">
+          <p class="title-section title-pro-skills" id="pro-skills">My pro skills:</p>
+          <ul class="pro-skills-wrapper title-section">
+            <li>&#10004; Web-development: HTML, CSS, JavaScript</li>
+            <li>&#10004; Version control: GIT, Github</li>
+            <li>&#10004; Figma</li>
+          </ul>
+        </div>
+        <div class="personal-skills">
+          <p class="title-section title-personal-skills" id="personal-skills">Personal skills:</p>
+          <ul class="personal-skills-wrapper title-section">
+            <li>&#10004; Self-organized</li>
+            <li>&#10004; Sociable</li>
+            <li>&#10004; Executive</li>
+          </ul>
+        </div>
+
       </div>
 
       <div class="education section">
@@ -106,7 +107,7 @@
               <td>2010 - 2016</td>
               <td>Diploma</td>
               <td>Belarusian National Technical University</td>
-              <td><a href="https://bntu.by/en/university">bntu.by</a></td>
+              <td><a href="https://bntu.by/en/university" target="_blank">bntu.by</a></td>
             </tr>
           </tbody>
         </table>
@@ -125,16 +126,17 @@
           </thead>
           <tbody>
             <tr>
-              <td>2024</td>
+              <td>2023</td>
               <td>Certificate</td>
               <td>Javascript/Front-End PreSchool</td>
-              <td><a href="https://rs.school/courses/javascript-preschool-ru">The Rolling Scopes School</a></td>
+              <td><a href="https://rs.school/courses/javascript-preschool-ru" target="_blank">The Rolling Scopes
+                  School</a></td>
             </tr>
             <tr>
               <td>2024</td>
               <td>In process</td>
               <td>JavaScript/Front-End</td>
-              <td><a href="https://rs.school/courses/javascript-ru">The Rolling Scopes School</a></td>
+              <td><a href="https://rs.school/courses/javascript-ru" target="_blank">The Rolling Scopes School</a></td>
             </tr>
           </tbody>
         </table>
@@ -150,21 +152,56 @@
 
       <div class="projects section">
         <p class="title-section" id="projects">&#128444; My projects</p>
-        <ul class="projects-wrapper">
-          <li>
-            <a href="https://rolling-scopes-school.github.io/dromari-JSFE2024Q4/christmas-shop/pages/home/">Christmas
-              Shop</a>
-          </li>
-          <li>
-            <a href="https://dromari.github.io/cssMemeSlider/cssMemeSlider/index.html">Meme Slider</a>
-          </li>
-          <li>
-            <a href="https://dromari.github.io/library/library/index.html">Library</a>
-          </li>
-          <li>
-            <a href="https://dromari.github.io/coffee-house/coffee-house/pages/home/">Coffee House</a>
-          </li>
-        </ul>
+
+        <div class="slider">
+          <div class="slider-container">
+            <div class="slide active">
+              <div class="description-slide">
+                <div class="project-name">Christmas Shop</div>
+                <a href="https://rolling-scopes-school.github.io/dromari-JSFE2024Q4/christmas-shop/pages/home/"
+                  target="_blank">
+                  <div class="project-image-container">
+                    <img class="project-image" src="./assets/images/christmas-shop.jpg" alt="project">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="description-slide">
+                <div class="project-name">Meme Slider</div>
+                <a href="https://dromari.github.io/cssMemeSlider/cssMemeSlider/index.html" target="_blank">
+                  <div class="project-image-container">
+                    <img class="project-image" src="./assets/images/meme-slider.jpg" alt="project">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="description-slide">
+                <div class="project-name">Library</div>
+                <a href="https://dromari.github.io/library/library/index.html" target="_blank">
+                  <div class="project-image-container">
+                    <img class="project-image" src="./assets/images/library.jpg" alt="project">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="description-slide">
+                <div class="project-name">Coffee House</div>
+                <a href="https://dromari.github.io/coffee-house/coffee-house/pages/home/" target="_blank">
+                  <div class="project-image-container">
+                    <img class="project-image" src="./assets/images/coffee-house.jpg" alt="project">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+          </div>
+        </div>
       </div>
 
       <div class="language section">
@@ -178,10 +215,10 @@
       <div class="contacts section">
         <p class="title-section" id="contacts">&#128187; Contacts</p>
         <ul class="contacts-wrapper">
-          <li><a class="links-contacts" href="+000000000000">Phone: +000 00 000 00 00</a>
+          <li><a class="links-contacts" href="+000000000000" target="_blank">Phone: +000 00 000 00 00</a>
           </li>
           <li>
-            <a class="links-contacts" href="mailto:7709722@gmail.com">Email: 7709722@gmail.com</a>
+            <a class="links-contacts" href="mailto:7709722@gmail.com" target="_blank">Email: 7709722@gmail.com</a>
           </li>
         </ul>
       </div>
@@ -195,7 +232,7 @@
           <p class="location">Minsk, Belarus</p>
           <div class="social-wrapper">
             <div class="social-circle">
-              <a href="https://youtube.com">youtube
+              <a href="https://youtube.com" target="_blank">
                 <svg class="youtube-img social-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -205,7 +242,7 @@
               </a>
             </div>
             <div class="social-circle">
-              <a href="https://instagram.com">instagram
+              <a href="https://instagram.com" target="_blank">
                 <svg class="instagram-img social-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -215,7 +252,7 @@
               </a>
             </div>
             <div class="social-circle">
-              <a href="https://facebook.com">facebook
+              <a href="https://facebook.com" target="_blank">
                 <svg class="facebook-img social-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -229,11 +266,11 @@
 
         <div class="footer-second-line">
           <p>&copy; 2025</p>
-          <a href="https://rs.school/js-stage0/" class="link-rsschool">
+          <a href="https://rs.school/js-stage0/" class="link-rsschool" target="_blank">
             <img src="./assets/images/icon/rs_school_js.svg" alt="GitHub">
             The Rolling Scopes School
           </a>
-          <a href="https://github.com/dromari" class="link-github">
+          <a href="https://github.com/dromari" class="link-github" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 32 32">
               <path fill-rule="evenodd"
                 d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
@@ -246,9 +283,8 @@
       </div>
     </footer>
 
-
-
   </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>
