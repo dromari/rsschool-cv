@@ -34,10 +34,11 @@
 
     <main class="main">
 
-      <section class="about-me">
-        <h2 class="name">Hello,<br> I'm Maryna
-          <hr> Junior <br> Front-end Developer
-        </h2>
+      <div class="about-me">
+        <div class="name-profession">
+          <h2 class="name">Hello,<br> I'm Maryna</h2>
+          <h2>Junior <br> Front-end Developer</h2>
+        </div>
         <h2 class="discription">About me: <br>
           I like what I do
         </h2>
@@ -57,7 +58,7 @@
             width="75px" height="75px" fill-rule="nonzero">
             <g fill="#085c5c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              font-family="none" font-size="none" style="mix-blend-mode: normal">
               <g transform="scale(4,4)">
                 <path
                   d="M23.77344,12c-10.918,0 -11.77344,0.85444 -11.77344,11.77344v16.45312c0,10.918 0.85544,11.77344 11.77344,11.77344h16.45312c10.918,0 11.77344,-0.85444 11.77344,-11.77344v-16.45312c0,-10.919 -0.85444,-11.77344 -11.77344,-11.77344zM21.16797,16h21.66406c4.793,0 5.16797,0.37497 5.16797,5.16797v21.66406c0,4.793 -0.37597,5.16797 -5.16797,5.16797h-21.66406c-4.793,0 -5.16797,-0.37597 -5.16797,-5.16797v-21.66406c0,-4.793 0.37497,-5.16797 5.16797,-5.16797zM22.50195,18.50391c-1.629,0 -2.94922,1.32027 -2.94922,2.94727c0,1.627 1.31922,2.94922 2.94922,2.94922c1.625,0 2.94531,-1.32122 2.94531,-2.94922c0,-1.625 -1.32031,-2.94727 -2.94531,-2.94727zM37.93359,26.32227c-2.46,0 -4.11016,1.34991 -4.78516,2.62891h-0.07031v-2.22266h-4.84961v16.27148h5.05273v-8.05078c0,-2.123 0.40611,-4.17773 3.03711,-4.17773c2.594,0 2.62695,2.42941 2.62695,4.31641v7.91211h5.05469v-8.92578c0,-4.382 -0.94541,-7.75195 -6.06641,-7.75195zM19.97266,26.72852v16.27148h5.05664v-16.27148z">
@@ -68,22 +69,24 @@
         <div class="photo">
           <img class="photo-img" src="./assets/images/my-photo.jpg" alt="My Photo">
         </div>
-      </section>
+      </div>
 
-      <section class="skills">
-        <ul class="pro-skills-wrapper title-section">My pro skills
+      <div class="skills section">
+        <p class="title-section">My pro skills</p>
+        <ul class="pro-skills-wrapper title-section">
           <li>&#10004; Web-development: HTML, CSS, JavaScript</li>
           <li>&#10004; Version control: GIT, Github</li>
           <li>&#10004; Figma</li>
         </ul>
-        <ul class="personal-skills-wrapper title-section">Personal skills
+        <p class="title-section">Personal skills</p>
+        <ul class="personal-skills-wrapper title-section">
           <li>&#10004; Self-organized</li>
           <li>&#10004; Sociable</li>
           <li>&#10004; Executive</li>
         </ul>
-      </section>
+      </div>
 
-      <section class="education " id="education">
+      <div class="education section" id="education">
         <p class="title-section">&#127980; Education</p>
         <table class="education-wrapper">
           <thead>
@@ -103,9 +106,9 @@
             </tr>
           </tbody>
         </table>
-      </section>
+      </div>
 
-      <section class="courses" id="courses">
+      <div class="courses section" id="courses">
         <p class="title-section">&#128211; Courses</p>
         <table class="courses-wrapper">
           <thead>
@@ -118,66 +121,68 @@
           </thead>
           <tbody>
             <tr>
-              <td>2022</td>
+              <td>2024</td>
               <td>Certificate</td>
               <td>Javascript/Front-End PreSchool</td>
-              <td><a href="https://rs.school/courses/javascript">The Rolling Scopes School</a></td>
+              <td><a href="https://rs.school/courses/javascript-preschool-ru">The Rolling Scopes School</a></td>
             </tr>
             <tr>
-              <td>2023</td>
+              <td>2024</td>
               <td>In process</td>
               <td>JavaScript/Front-End</td>
-              <td><a href="https://rs.school/courses/javascript">The Rolling Scopes School</a></td>
+              <td><a href="https://rs.school/courses/javascript-ru">The Rolling Scopes School</a></td>
             </tr>
           </tbody>
         </table>
-      </section>
+      </div>
 
-      <section class="code" id="code">
+      <div class="code section" id="code">
         <p class="title-section">&#9000; Code</p>
-        <code class="code-wrapper"> function multiply (a, b)  {
-                  return a * b
+        <code class="code-wrapper"> function sum (a, b)  { <br>
+                  &nbsp;&nbsp;return a + b <br>
                  }
         </code>
-      </section>
+      </div>
 
-      <section class="projects" id="projects">
+      <div class="projects section" id="projects">
         <p class="title-section">&#128444; My projects</p>
         <ul class="projects-wrapper">
           <li>
-            <a href="https://dromari.github.io/travel/travel">Travel</a>
+            <a href="https://rolling-scopes-school.github.io/dromari-JSFE2024Q4/christmas-shop/pages/home/">Christmas
+              Shop</a>
           </li>
           <li>
-            <a href="https://dromari.github.io/online-zoo/online-zoo/pages/main/">Online-zoo</a>
+            <a href="https://dromari.github.io/cssMemeSlider/cssMemeSlider/index.html">Meme Slider</a>
           </li>
           <li>
-            <a href="https://dromari.github.io/plants/plants">Plants</a>
+            <a href="https://dromari.github.io/library/library/index.html">Library</a>
           </li>
           <li>
-            <a href="https://dromari.github.io/shelter/shelter/pages/main/">Shelter</a>
+            <a href="https://dromari.github.io/coffee-house/coffee-house/pages/home/">Coffee House</a>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <section class="language" id="language">
+      <div class="language section" id="language">
         <p class="title-section">&#128218; Language</p>
         <ul class="language-wrapper">
           <li>Russian: Native</li>
           <li>English: A2 - Pre-intermediate</li>
         </ul>
-      </section>
+      </div>
 
-      <section class="contacts" id="contacts">
+      <div class="contacts section" id="contacts">
         <p class="title-section">&#128187; Contacts</p>
         <ul class="contacts-wrapper">
-          <li>Email: 7709722@gmail.com</li>
-          <li>Github: dromari</li>
+          <li><a class="links-contacts" href="+000000000000">Phone: +000 00 000 00 00</a>
+          </li>
+          <li>
+            <a class="links-contacts" href="mailto:7709722@gmail.com">Email: 7709722@gmail.com</a>
+          </li>
         </ul>
-      </section>
+      </div>
 
     </main>
-
-
 
     <footer class="footer">
       <div class="footer-wrapper">
@@ -185,7 +190,7 @@
         <div class="footer-first-line">
           <p class="location">Minsk, Belarus</p>
           <div class="social-wrapper">
-            <li class="social-circle">
+            <div class="social-circle">
               <a href="https://youtube.com">
                 <svg class="youtube-img social-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -194,8 +199,8 @@
                     fill="black" />
                 </svg>
               </a>
-            </li>
-            <li class="social-circle">
+            </div>
+            <div class="social-circle">
               <a href="https://instagram.com">
                 <svg class="instagram-img social-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -204,8 +209,8 @@
                     fill="black" />
                 </svg>
               </a>
-            </li>
-            <li class="social-circle">
+            </div>
+            <div class="social-circle">
               <a href="https://facebook.com">
                 <svg class="facebook-img social-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -214,7 +219,7 @@
                     fill="black" />
                 </svg>
               </a>
-            </li>
+            </div>
           </div>
         </div>
 
@@ -225,14 +230,10 @@
             The Rolling Scopes School
           </a>
           <a href="https://github.com/dromari" class="link-github">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" fill="white" fill-opacity="0.01" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4ZM0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z"
-                fill="black" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M19.183 45.4715C18.9896 45.2218 18.9896 42.9972 19.183 38.798C17.1112 38.8695 15.8022 38.7257 15.256 38.3666C14.4368 37.8279 13.6166 36.1666 12.8889 34.9958C12.1612 33.825 10.546 33.6399 9.8938 33.3782C9.24158 33.1164 9.07785 32.0495 11.691 32.8564C14.3042 33.6633 14.4316 35.8606 15.256 36.3744C16.0804 36.8882 18.0512 36.6634 18.9446 36.2518C19.8379 35.8402 19.7722 34.3077 19.9315 33.7006C20.1329 33.1339 19.423 33.0082 19.4074 33.0036C18.5353 33.0036 13.9537 32.0072 12.6952 27.5705C11.4368 23.1339 13.0579 20.234 13.9227 18.9874C14.4992 18.1563 14.4482 16.3851 13.7697 13.6736C16.2333 13.3588 18.1344 14.1342 19.4732 16C19.4745 16.0107 21.2283 14.9571 24 14.9571C26.7718 14.9571 27.7551 15.8153 28.514 16C29.2728 16.1847 29.8798 12.734 34.5666 13.6736C33.5881 15.5968 32.7686 18 33.3941 18.9874C34.0195 19.9748 36.4742 23.1146 34.9664 27.5705C33.9611 30.5412 31.9851 32.3522 29.0382 33.0036C28.7002 33.1114 28.5313 33.2854 28.5313 33.5254C28.5313 33.8855 28.9881 33.9248 29.6463 35.6116C30.085 36.7361 30.1167 39.9479 29.7413 45.2469C28.7904 45.489 28.0506 45.6515 27.5219 45.7346C26.5845 45.8819 25.5667 45.9645 24.5666 45.9964C23.5666 46.0283 23.2193 46.0247 21.8368 45.896C20.9151 45.8102 20.0305 45.6687 19.183 45.4715Z"
-                fill="black" />
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 32 32">
+              <path fill-rule="evenodd"
+                d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
+              </path>
             </svg>
             Dromari
           </a>
