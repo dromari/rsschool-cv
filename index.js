@@ -1,57 +1,41 @@
-let slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-let isEnabled = true;
+const burgerToggle = document.getElementById('burger-toggle');
+const headerNav = document.getElementById('header-nav');
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
 
-
-function changeCurrentSlide(n) {
-	currentSlide = (n + slides.length) % slides.length;
-}
-
-
-function hideSlide(direction) {
-	isEnabled = false;
-	slides[currentSlide].classList.add(direction);
-	slides[currentSlide].addEventListener('animationend', function() {
-		this.classList.remove('active', direction);
-	});
-}
-
-
-function showSlide(direction) {
-	slides[currentSlide].classList.add('next', direction);
-	slides[currentSlide].addEventListener('animationend', function() {
-		this.classList.remove('next', direction);
-		this.classList.add('active');
-		isEnabled = true;
-	});
-}
-
-
-function nextSlide(n) {
-	hideSlide('to-left');
-	changeCurrentSlide(n + 1);
-	showSlide('from-right');
-}
-
-
-function previousSlide(n) {
-	hideSlide('to-right');
-	changeCurrentSlide(n - 1);
-	showSlide('from-left');
-}
-
-
-document.querySelector('.arrow.left').addEventListener('click', function() {
-	if (isEnabled) {
-		previousSlide(currentSlide);
-	}
+burgerToggle.addEventListener('click', () => {
+  burgerToggle.classList.toggle('open');
+  headerNav.classList.toggle('open');
+  themeToggle.classList.toggle('open');
 });
 
 
-document.querySelector('.arrow.right').addEventListener('click', function() {
-	if (isEnabled) {
-		nextSlide(currentSlide);
-	}
+document.querySelectorAll('.header-navigation-wrapper a').forEach(link => {
+  link.addEventListener('click', () => {
+    burgerToggle.classList.remove('open');
+    headerNav.classList.remove('open');
+    themeToggle.classList.remove('open');
+  });
 });
 
 
+themeToggle.addEventListener('click', () => {
+  if (body.classList.contains('light-theme')) {
+    body.classList.remove('light-theme');
+    body.classList.add('dark-theme');
+  } else {
+    body.classList.remove('dark-theme');
+    body.classList.add('light-theme');
+  }
+});
+
+
+document.addEventListener('click', (event) => {
+  if (headerNav.classList.contains('open')) {
+    if (!burgerToggle.contains(event.target) && !headerNav.contains(event.target)) {
+      burgerToggle.classList.remove('open');
+      headerNav.classList.remove('open');
+      themeToggle.classList.remove('open');
+    }
+  }
+});
